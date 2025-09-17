@@ -5,8 +5,8 @@ from .models import Todos
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todos
-        fields = {
+        fields = (
             "id",
             "title",
             "body"
-        }
+        )
